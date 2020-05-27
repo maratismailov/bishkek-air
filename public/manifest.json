@@ -1,6 +1,6 @@
 {
-  "name": "sveltepwatemplate",
-  "short_name": "sveltepwatemplate",
+  "name": "leaflet-svelte",
+  "short_name": "leaflet-svelte",
   "theme_color": "#1e1e1e",
   "background_color": "#1e1e1e",
   "display": "standalone",
