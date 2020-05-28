@@ -105,7 +105,7 @@
                     'microsoft.base.hybrid.road',
                     'microsoft.base.labels.road '
                 */
-        tilesetId: "microsoft.base.road",
+        tilesetId: "microsoft.base.darkgrey",
 
         //The language of labels. Supported languages: https://docs.microsoft.com/en-us/azure/azure-maps/supported-languages
         language: "en-US",
