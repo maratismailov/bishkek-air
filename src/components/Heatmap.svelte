@@ -71,7 +71,7 @@
     // console.log(heat_array)
     var heat = L.heatLayer(
       heat_array,
-      { radius: 45 }
+      { radius: 25, maxZoom: 12 }
     ).addTo(map);
 
     // data_to_display.forEach(elem => {
