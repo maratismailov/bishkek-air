@@ -1,5 +1,5 @@
 {
-  "name": "leaflet-svelte",
+  "name": "bishkek-air",
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
@@ -9,9 +9,8 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
-    "axios": "^0.19.2",
     "leaflet": "^1.7.1",
-    "leaflet.heat": "^0.2.0",
+    "redaxios": "^0.3.0",
     "rollup": "^2.33.1",
     "rollup-plugin-livereload": "^1.0.0",
     "rollup-plugin-svelte": "^5.2.3",
