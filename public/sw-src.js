@@ -3,22 +3,13 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox
 if (workbox) {
     console.log(`Yay! Workbox is loaded 🎉`);
 
-    workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
+    // workbox.precaching.precacheAndRoute(self.__WB_MANIFEST);
     workbox.routing.registerRoute(
-        new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
-        new workbox.strategies.CacheFirst({
-            cacheName: 'google-fonts',
-            plugins: [
-                new workbox.expiration.ExpirationPlugin({
-                    maxEntries: 30,
-                }),
-                new workbox.cacheableResponse.CacheableResponsePlugin({
-                    statuses: [0, 200]
-                }),
-            ],
+        new RegExp('https://http://bishkek-air.netlify.app'),
+        new workbox.strategies.StaleWhileRevalidate({
+            cacheName: 'bishkek-air'
         }),
     );
-
 } else {
     console.log(`Boo! Workbox didn't load 😬`);
 }
